@@ -2,5 +2,7 @@
   "name": "ahmed-client",
   "app_id": "a0b72cc6",
   "type": "ionic-angular",
-  "integrations": {}
+  "integrations": {
+    "cordova": {}
+  }
 }

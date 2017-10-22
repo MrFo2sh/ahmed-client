@@ -30,7 +30,7 @@ export class BackendServiceProvider {
   // }
 
   getServerStatus(cb){
-    this.http.get('http://localhost:3000/status')
+    this.http.get('https://ahmed-smsm.herokuapp.com/status')
     .map(res => res.json())
     .subscribe(data => {
       console.log("http call data: "+data);
@@ -50,7 +50,7 @@ export class BackendServiceProvider {
   // }
 
   updateCustomer(value,cb){
-    this.http.post('http://localhost:3000/customerupdate',{value:value})
+    this.http.post('https://ahmed-smsm.herokuapp.com/customerupdate',{value:value})
     .map(res=>res.json)
     .subscribe(data=>{
       console.log(data);
@@ -74,7 +74,7 @@ export class BackendServiceProvider {
   // }
 
   updateServerStatus(cb){
-    this.http.get('http://localhost:3000/updatestatus')
+    this.http.get('https://ahmed-smsm.herokuapp.com/updatestatus')
     .map(res => res.json())
     .subscribe(data => {
       console.log("http call data: "+data);
